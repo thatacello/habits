@@ -12,7 +12,11 @@ import {
   Videos,
   Play,
   Subtitle,
+  Bookmark,
 } from './styles';
+import Star from '../../../../assets/icons/star.svg';
+import Player from '../../../../assets/icons/play.svg';
+import Bookmarker from '../../../../assets/icons/bookmark.svg';
 
 interface CardProps {
   image: string;
@@ -26,23 +30,24 @@ interface CardProps {
 function Card({ image, rate, category, title, videos, subtitle }: CardProps) {
   return (
     <Container>
-      <Image src={image} />
+      <Image src={require(`../../../../assets/images/${image}.png`)} />
       <TextContainer>
         <Row>
           <Rate>
-            <Icon />
-            <Text></Text>
+            <Icon src={Star} />
+            <Text>{rate}</Text>
           </Rate>
+          <Bookmark src={Bookmarker} />
         </Row>
-        <Category></Category>
+        <Category>{category}</Category>
         <Row>
-          <Title></Title>
+          <Title>{title}</Title>
           <Videos>
-            <Play />
-            <Number></Number>
+            <Play src={Player} />
+            <Number>{videos}</Number>
           </Videos>
         </Row>
-        <Subtitle></Subtitle>
+        <Subtitle>{subtitle}</Subtitle>
       </TextContainer>
     </Container>
   );

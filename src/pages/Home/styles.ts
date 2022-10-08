@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
+  height: 100%;
 `;
 
 export const Nav = styled.div`
@@ -48,6 +49,7 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2rem;
 
   div {
     display: flex;
@@ -79,4 +81,74 @@ export const Row = styled.div`
 export const Color = styled.h1`
   color: #102948;
   font-size: 1.5rem;
+`;
+
+export const CardsRow = styled.h1`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+  }
+`;
+
+export const FooterContainer = styled.div`
+  background-color: #0c0636;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+  }
+`;
+
+export const Column = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: #FFF;
+    font-size: 1.2rem;
+    overflow: hidden;
+    height: 2rem;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+  }
+`;
+
+export const ProfilesContainer = styled.div`
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+  }
+`;
+
+export const FlipperContainer = styled.div`
+  width: 100%;
+  min-height: 15rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 3rem;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+  }
 `;
