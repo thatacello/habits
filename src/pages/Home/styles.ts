@@ -157,3 +157,33 @@ export const FlipperContainer = styled.div`
     flex-direction: row;
   }
 `;
+
+export const ExternalButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #f8cd5e;
+  border-radius: 16px;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  width: 19rem;
+  cursor: pointer;
+  z-index: 2000;
+
+  .que-tal {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  img {
+    width: 3.5rem;
+  }
+`;

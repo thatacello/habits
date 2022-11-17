@@ -1,9 +1,11 @@
 import {
+  ButtonContainer,
   Cards,
   CardsRow,
   Color,
   Column,
   Container,
+  ExternalButtonContainer,
   FlipperContainer,
   FooterContainer,
   Icon,
@@ -14,6 +16,7 @@ import {
 import home from '../../assets/icons/home.svg';
 import conteudo from '../../assets/icons/conteudo.svg';
 import conta from '../../assets/icons/conta.svg';
+import Dog from '../../assets/images/dog.png';
 import { cardContent, profileContent, talksContent } from './content';
 import Card from './_compose/Card';
 import Profile from './_compose/Profile';
@@ -94,6 +97,18 @@ function Home() {
               />
             ))}
           </FlipperContainer>
+
+          <ExternalButtonContainer>
+            <ButtonContainer>
+              <img
+                src={Dog}
+                alt="cara de um cachorro preto com a língua para fora"
+              />
+              <h2 className="que-tal">
+                que tal descobrir novos temas? clique aqui e descubra!
+              </h2>
+            </ButtonContainer>
+          </ExternalButtonContainer>
         </Column>
       </FooterContainer>
     </Container>
