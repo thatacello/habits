@@ -25,13 +25,19 @@ function Home() {
       <Nav>
         <ul>
           <li>
-            <Icon src={home} /> Home
+            <a href="/home">
+              <Icon src={home} /> Home
+            </a>
           </li>
           <li>
-            <Icon src={conteudo} /> Conteúdo
+            <a href="/home">
+              <Icon src={conteudo} /> Conteúdo
+            </a>
           </li>
           <li>
-            <Icon src={conta} /> Conta
+            <a href="/conta">
+              <Icon src={conta} /> Conta
+            </a>
           </li>
         </ul>
       </Nav>

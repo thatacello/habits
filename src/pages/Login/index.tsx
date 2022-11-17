@@ -1,5 +1,4 @@
 import { Color, Column, Container, Content, FormContainer } from './styles';
-import Link from 'next/link';
 
 function Login() {
   return (

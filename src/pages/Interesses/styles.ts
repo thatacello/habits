@@ -28,6 +28,7 @@ export const BallsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  overflow: hidden;
 
   button {
     font-weight: 700;
@@ -233,9 +234,9 @@ export const ButtonContainer = styled.div`
   width: 100%;
   height: 5rem;
   position: relative;
-  margin-top: -20rem;
   display: flex;
   justify-content: flex-end;
+  bottom: 20rem;
 
   a {
     position: absolute;

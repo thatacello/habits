@@ -16,6 +16,11 @@ export const Nav = styled.div`
   flex-direction: row;
   justify-content: flex-end;
 
+  a {
+    text-decoration: none;
+    color: #29d799;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
@@ -115,7 +120,7 @@ export const Column = styled.div`
   flex-direction: column;
 
   h2 {
-    color: #FFF;
+    color: #fff;
     font-size: 1.2rem;
     overflow: hidden;
     height: 2rem;
